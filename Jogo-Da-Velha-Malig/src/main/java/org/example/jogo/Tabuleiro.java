@@ -83,7 +83,7 @@ public class Tabuleiro implements Cloneable
                 Marca m2 = outro.matriz[i][j];
 
                 if(m1 == null) {
-                    if (m2 == null) return false;
+                    if (m2 != null) return false;
                 }
                 else{
                     if(!m1.equals(m2))return false;
