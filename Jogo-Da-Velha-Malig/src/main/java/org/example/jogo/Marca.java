@@ -10,9 +10,10 @@ public class Marca
         // validar smb, garantindo que ele
         // seja 'X' ou 'O' e coloca-lo em
         // simbolo
-        // dar excecao em caso de valor invalido
-
-        if(smb != 'X' && smb != 'O')throw new Exception("Só pode digitar X ou O");
+        // dar excecao em caso de valor invalido (minusculo, diferente de X ou O, etc)
+        if(smb != 'X' && smb != 'O')
+            throw new Exception("Só pode digitar X ou O");
+            
         this.simbolo = smb;
 
     }

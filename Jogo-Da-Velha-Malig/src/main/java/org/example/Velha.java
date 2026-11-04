@@ -55,10 +55,10 @@ public class Velha
                 }
                 while (!analista.fimDeJogo());
 
-                if (analista.getMarcaDoVencedor().equals(jogadorH.getMarca()))
+                if (jogadorH.getMarca().equals(analista.getMarcaDoVencedor()))
                     jogadorH.vcGanhou ();
                 else
-                if (analista.getMarcaDoVencedor().equals(jogadorA.getMarca()))
+                if (jogadorA.getMarca().equals(analista.getMarcaDoVencedor()))
                     jogadorH.vcPerdeu ();
                 else
                     jogadorH.deuVelha ();

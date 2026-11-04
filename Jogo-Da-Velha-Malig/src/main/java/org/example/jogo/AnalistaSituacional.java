@@ -10,7 +10,7 @@ public class AnalistaSituacional
             throw new Exception("Tabuleiro nao pode ser nulo");
         }
 
-        this.tabDoJogo = new Tabuleiro(tab);
+        this.tabDoJogo = tab;
     }
 
     public Marca getMarcaDoVencedor ()
